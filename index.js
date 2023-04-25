@@ -70,7 +70,7 @@ function init() {
     .prompt(questions)
     .then((response) => {
         console.log(response);
-        let bodyContent = `# Module 09 Mini-Project: Portfolio Generator ${response.description}\n ## Instructions\n ${response.instructions} \n ## Usage\n ${response.usage} \n ## Guidelines\n ${response.guidelines} ## License Type\n ${response.licensebadge} \n ## Questions?\n Please inquire here: www.github.com/${response.username} \n or here ${response.emailaddr}`;
+        let bodyContent = `# ${response.title} \n ## Description \n ${response.description} \n ## Table of contents \n 1. [Instructions](#instructions)\n 2. [Usage](#usage)\n 3. [Guidelines](#guidelines)\n 4. [License](#license)\n 5. [Testing](#testing)\n 6. [Questions](#questions)\n ## Instructions\n ${response.instructions} \n ## Usage\n ${response.usage} \n ## Guidelines\n ${response.guidelines} \n ## License\n ${response.license} \n ## Testing \n ${response.test}\n ## Questions?\n Please inquire here: www.github.com/${response.username} \n or here ${response.email}`;
          writeToFile(bodyContent);
     })
 }
@@ -79,7 +79,7 @@ function init() {
 //init();
 
 function writeToFile(bodyContent) {
-    fs.writeFile('test-Readme2.md', `${bodyContent}\n`, (err) =>
+    fs.writeFile('NEW-README.md', `${bodyContent}\n`, (err) =>
   // Ternary operator takes in a condition followed by a question mark (?)
   // then an expression to execute if the condition is truthy followed by a colon (:)
   // and finally the expression to execute if the condition is falsy.
