@@ -15,7 +15,7 @@ This app will generate a custom read me file based on a series of question promp
 
 The following video shows the application's appearance and functionality:
 
-![The Code generator will randomly generate a password.](//challenge5-Day-Planner/Assets/images/Screen%20Shot%202023-03-28%20at%208.19.04%20AM.png)
+![The Code generator will generate a readme file](./assets/images/applicationgif.gif)
 
 > **Note**: None
 
